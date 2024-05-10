@@ -1,0 +1,35 @@
+---
+    import { Carrousel } from './CarouselInfo';
+---
+
+<div class="m-16 text-center text-color_text">
+    <h1 class="font-semibold pt-[20px] text-4xl text-color_text_secund">Enlaces</h1>
+    <div class="grid grid-cols-3 gap-4 w-auto justify-center border border-color_text_secund rounded bg-main p-2 m-8">
+        <div class="flex justify-center items-center">
+            <a href="https://twitter.com/LalabellLullaby" target="_BLANK">
+                <img src="assets/redes/X.svg" alt="X Icon" class="redes-icon">
+            </a>
+        </div>
+        <div class="flex justify-center items-center">
+            <a href="https://www.youtube.com/@LalabellLullaby" target="_BLANK">
+                <img src="assets/redes/youtube.svg" alt="YouTube Icon" class="redes-icon">
+            </a>
+        </div>
+        <div class="flex justify-center items-center">
+            <a href="https://www.discord.gg/cCHMMmJ4Rp" target="_BLANK">
+                <img src="assets/redes/discord.svg" alt="Discord Icon" class="redes-icon">
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <Carrousel client:load />
+    </div>
+
+</div>
+
+<style>
+    .redes-icon:hover {
+        transform: scale(1.1); 
+    }
+</style>

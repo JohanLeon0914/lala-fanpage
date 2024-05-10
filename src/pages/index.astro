@@ -1,0 +1,31 @@
+---
+import { Carrousel } from '../components/Carrousel';
+import Profile from '../components/Profile.astro';
+import Redes from '../components/Enlaces.astro';
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/footer.astro';
+import LoreAndFanarts from '../components/LoreAndFanarts.astro';
+---
+
+<Layout title="Lalabell Lullaby - Fan Page">
+	<main
+    style="background-image: url('assets/background_image.jpg'); background-size: cover;"
+  >
+		<div id="inicio" class="pt-[50px]">
+			<Carrousel client:load />
+		</div>
+
+		<div id="perfil">
+			<Profile />
+		</div>
+
+		<LoreAndFanarts />
+
+		<div id="enlaces">
+			<Redes />
+		</div>
+
+		<Footer />
+	</main>
+</Layout>
+
