@@ -29,7 +29,7 @@ export function Carrousel() {
   ];
   return (
     <Swiper
-      slidesPerView={1}
+      slidesPerView={2}
       centeredSlides={true}
       autoplay={{
         delay: 3000,
